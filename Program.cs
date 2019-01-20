@@ -154,7 +154,7 @@ namespace p1
                             Console.WriteLine($"Your cart: {cart}");
                             Console.WriteLine($"Your cart total: {totalCost}");
                             Console.WriteLine($"Available balance: {money}");
-                            Console.WriteLine("Do your want to continue? y or n");
+                            Console.WriteLine("\nDo your want to continue? y or n");
                             var ans2 = Console.ReadLine();
                             chr = Convert.ToChar(ans2);
                         }
