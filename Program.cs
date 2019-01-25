@@ -16,6 +16,7 @@ namespace p1
             var totalCost = 0.0m;
             var MIN_AGE = 16;
             var cart = "";
+            decimal TAX = 5.49m;
             //Printing name of the user
             while (name == "")
             {
@@ -150,9 +151,15 @@ namespace p1
                             {
                                 hasFunds = false;
                             }
+
+                            //Function to calculate the total cost including taxes
+                             decimal cartTotal(decimal num){
+                                return num + num / TAX;
+                            }
                             //printing the items that the user bought and the remaining balance
                             Console.WriteLine($"Your cart: {cart}");
                             Console.WriteLine($"Your cart total: {totalCost}");
+                            Console.WriteLine($"Your total after taxes:{cartTotal(totalCost)} ");
                             Console.WriteLine($"Available balance: {money}");
                             Console.WriteLine("\nDo your want to continue? y or n");
                             var ans2 = Console.ReadLine();
