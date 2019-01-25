@@ -46,6 +46,7 @@ namespace p1
                 money = Convert.ToDecimal(ans1);
                 if (money >= 190)
                 {
+                    
                     while (hasFunds)
                     {
 
